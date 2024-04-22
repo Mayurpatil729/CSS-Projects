@@ -1,0 +1,115 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBar</title>
+    <style>
+      /* theme */
+      :root {
+        --main-color: #0062ff;
+        --bg-color: #f7fcff;
+      }
+
+      /* Start of layout */
+
+      /* .container {
+        max-width: 162rem;
+        margin: 1rem auto;
+        padding: 1rem 4rem 4rem 4rem;
+      } */
+
+      /* End of layout */
+
+      /* Start of style */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .section-navbar {
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+          rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+      }
+
+      .section-navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.6rem 4rem;
+      }
+
+      /* p,
+      li,
+      a {
+        font size: 1.8rem;
+        letter-spacing: 0.1rem;
+      } */
+
+      a {
+        text-decoration: none;
+      }
+      .section-navbar .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        text-transform: capitalize;
+
+        & li a {
+          color: var(--heading-color);
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 1.6rem;
+          display: inline-block;
+          position: relative;
+
+          &::after {
+            content: " ";
+            position: absolute;
+            bottom: -0.3rem;
+            left: 0;
+            width: 0%;
+            border-bottom: 0.2rem solid var(--main-color);
+            transition: all 0.3s linear;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear;
+            -ms-transition: all 0.3s linear;
+            -o-transition: all 0.3s linear;
+          }
+        }
+
+        & li a:hover:after {
+          width: 100%;
+        }
+      }
+      /* End of Style */
+    </style>
+  </head>
+  <body>
+    <!-- NavBar Start Section  -->
+
+    <header class="section-navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="#" alt="" width="80%" height="auto" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item"><a href="/">home</a></li>
+            <li class="nav-item"><a href="/">about</a></li>
+            <li class="nav-item"><a href="/">services</a></li>
+            <li class="nav-item"><a href="/">blog</a></li>
+            <li class="nav-item"><a href="/">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- NavBar End Section  -->
+  </body>
+</html>
